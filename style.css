@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Work Sans", serif;
+}
+
+.bg {
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgb(9, 9, 9) 2.884%, rgba(16, 16, 16, 0) 101.034%), url('assets/hero-bg.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    overflow: hidden;
+}
+
+
+
+.hero{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero  .p{
+    font-size: 1.5rem;
+}
+
+.hero h2{
+    font-size: 3rem;
+}
+
+button{
+    border-radius: 8px;
+    padding: 21px 32px 21px 32px;
+    background: rgb(82, 195, 3);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+/* card section  */
+/* .items-class{
+    height: 100vh;
+} */
+
+.item{
+    width: 80%;
+    margin: 150px auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    gap: 15px;
+    text-align: center;
+}
+.card img{
+    width: 320px;
+}
+.item > h2{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 2.6rem;
+}
+
+.item p{
+    opacity: 0.7;
+}
+
+.item .brand{
+    font-size: 1.1rem;
+}
+
+.card span{
+    border-radius: 8px;
+    background: rgba(82, 195, 3, 0.15);
+    padding: 10px 20px;
+}
+
+.card-cont{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Footer Card  */
+.footer-card{
+    display: flex;
+    width: 100%;
+}
+
+.footer-card > img{
+    width: 50%;
+}
+
+.footer-box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-box h2{
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.footer-box p, hr{
+    opacity: 0.7;
+}
+
+.icon{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.logo img{
+    width: 40px;
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero .p {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 16px 24px;
+        font-size: 1rem;
+    }
+
+    .item > h2 {
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .footer-card {
+        flex-direction: column;
+    }
+
+    .footer-card > img {
+        width: 100%;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    .footer-box h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero .p {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .item > h2 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .footer-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero .p {
+        font-size: 1.3rem;
+    }
+
+    .item > h2 {
+        font-size: 2.3rem;
+    }
+
+    .card img {
+        width: 280px;
+    }
+
+    .footer-box h2 {
+        font-size: 2.2rem;
+    }
+
+    .logo img {
+        width: 35px;
+    }
+}
